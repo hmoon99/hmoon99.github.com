@@ -12,7 +12,9 @@ header h2{
   font-family: big caslon;
   font-size: 20px;
   margin-top:-30px;
-  background-color: rgb(193, 248, 186);
+  padding: 10px;
+  background-color: rgb(209, 252, 227);
+  border-top: 5px dotted rgb(170, 6, 6);
 }
 main {
   padding-right: 30px;
@@ -46,7 +48,7 @@ section ol li a, ul li a {
   padding: 2px;
   display: block;
   margin-bottom: 2px;
-  background-color: rgb(231, 252, 237);
+  background-color:  rgb(209, 252, 227);
   text-align:left;
   position: relative;
 }
@@ -141,7 +143,8 @@ footer{
     font-family: big caslon;
     font-size: 20px;
     margin-top:-30px;
-    background-color: rgb(255, 155, 172);
+    background-color: rgb(211, 253, 211);
+    border-top: 8px dotted rgb(216, 10, 10);
   }
   main {
     display: flex;
@@ -180,7 +183,7 @@ footer{
     padding: 2px;
     display: block;
     margin-bottom: 2px;
-    background-color: rgb(231, 252, 237);
+    background-color: rgb(219, 255, 221);
     text-align:left;
     position: relative;
   }
@@ -205,7 +208,7 @@ footer{
     justify-content: space-between;
     padding-left:50px;
     padding-right: 50px;
-    margin-top:-40px;
+    margin-top:-30px;
     color: white;
   
   }}
