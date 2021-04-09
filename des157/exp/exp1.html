@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> JS Experimentation: Selections & Loops</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+
+    <h2>In order to open the console: Right click on your mouse and choose "Inspect". Then choose "Console"</h2>
+
+    <script>
+      // Write a program that takes a lowercase string and capitalizes the first letter of each word in the string.
+        
+        var userString = prompt("Type a string of words all in lowercase", "");
+        var array = userString.split(" ");//make array with each word as an element inside
+        var newString = "";//empty string
+        for(var i=0; i<array.length; i++){//for loop 
+          array[i][0].toUpperCase()+array[i].substr(1);//change first letter to uppercase
+          var newWord = array[i][0].toUpperCase()+array[i].substr(1);//new word
+          newString += newWord + ' ';//add new words together
+        }
+        console.log(newString);//new sentence
+
+    </script>
+</body>
+</html>
