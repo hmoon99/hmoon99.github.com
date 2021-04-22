@@ -1,6 +1,13 @@
 body{
   background: black;
 }
+div{
+  display: flex;
+  /* justify-content: space-between 100px; */
+  justify-content: space-around;
+  
+  
+}
 header h1{
   text-align: center;
   background-image: linear-gradient(white, rgb(248, 113, 165));
