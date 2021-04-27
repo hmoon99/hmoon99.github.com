@@ -5,18 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js" defer></script>
   <title>Build a Mad Lib Script</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script> 
 </head>
 <body>
-    <h1>Build a Mad Lib Script</h1>
-
+    <h1>FOUR SEASONS MAD LIBS</h1>
     <main>
-        <form id="myform">
-            <label for="noun1">Provide a Noun</label>
-            <input type="text" id="noun">
-            <input type="submit" value="Send">
-        </form>
-    </main>
+      <form id="myform" class="overlay showing">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+          
+          <label for="noun2">Noun</label>
+          <input type="text" id="noun1" required>
+          
+          <label for="noun2">Noun</label>
+          <input type="text" id="noun2">
 
-    
+          <label for="noun3">Noun</label>
+          <input type="text" id="noun3">
+
+          <label for="verb">Verb</label>
+          <input type="text" id="verb" required>
+       
+          <label for="adj">Adjective</label>
+          <input type="text" id="adj1" required>
+          
+          <label for="adj">Adjective</label>
+          <input type="text" id="adj2">
+
+          <label for="adj">Adjective</label>
+          <input type="text" id="adj3">
+
+          <label for="beverage">Beverage</label>
+          <input type="text" id="beverage">
+          
+          <label for="adverb">Adverb</label>
+          <input type="text" id="adverb">
+        
+          
+          <input id="submit" type="submit" value="Send">
+      </form>
+      <div><img src="images/madlibsEarth.png" alt="Earth" width="1300" height="1000" ></div>
+      <div id="girl"><img src="images/madlibsGirl.png" alt="Girl" width="600" height="700"></div>
+
+      <article id="madlib" class="overlay hidden"></article>
+      </article>
+    <footer>
+      <a href="https://validator.w3.org/check?uri=https://hmoon99.github.io/des157/studio1">HTML</a>
+    </footer>
+
+
+  </main>
+  
+
+
 </body>
 </html>

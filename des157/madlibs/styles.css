@@ -1,0 +1,84 @@
+form{
+  width: 200px;
+  display: grid;
+  background-color: rgb(230, 229, 228);
+  padding: 10px;
+  font-family: khand;
+  border-radius: 5px;
+}
+label{
+  display: grid;
+}
+
+main{
+  display: grid;
+  text-align: center;
+  justify-content: space-around;
+}
+body{
+  z-index: -1;
+}
+
+#submit{
+  margin-top: 10px;
+
+}
+h1{
+  text-align: center;
+  font-size: 70px;
+  font-family: special elite;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+input:hover {
+  background-color: rgb(253, 197, 239);
+}
+div img{
+  position: absolute;
+  top:51%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index:-1;
+  display: center;
+  margin-top: -100;
+}
+#girl{
+  position: absolute;
+  top:80%;
+  left: 15%; 
+  transform: translate(-50%, -50%); 
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.showing {
+  visibility: showing;
+  opacity: 1;
+}
+
+article{
+  position: absolute;
+  top:100;
+  left:200;
+  text-align: justify;
+  width: 25%;
+  color: black;
+  font-size: 20px;
+  font-family: khand;
+  background-color: rgb(229, 238, 234);
+  padding: 20px;
+  border: dotted 5px pink;
+  display: center;
+  top:51%;
+  left: 48%; 
+  transform: translate(-50%, -50%); 
+
+
+}
+
+
+footer{
+  
+}
