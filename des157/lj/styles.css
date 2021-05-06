@@ -10,6 +10,9 @@ div{
   
   
 }
+img{
+  border-radius: 9px;
+}
 header h1{
   text-align: center;
   background-image: linear-gradient(white, rgb(248, 113, 165));
@@ -34,10 +37,10 @@ article h2 {
 article h3{
   margin-top:-20px;
 }
-article  {
+article {
   text-align: center;
   display: center;
-  width: 33%;
+  width: 50%;
   text-align: justify;
   background-color: rgb(238, 248, 237);
   padding: 20px;
@@ -45,7 +48,20 @@ article  {
   border: 5px dotted rgb(245, 28, 111);
   margin-bottom: 50px;
   font-size: 16px;
+  font-family: khand;
+  font-weight: bolder;
 }
+article p{
+  margin: 30px;
+}
+#part{
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(247, 93, 119);
+  text-align: center;
+}
+
+
 #s{
   font-family: amatic sc;
   font-weight: bolder;
