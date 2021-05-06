@@ -54,7 +54,7 @@ article {
 article p{
   margin: 30px;
 }
-#part{
+#part, #part2{
   font-size: 25px;
   font-weight: bold;
   color: rgb(247, 93, 119);
