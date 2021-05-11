@@ -1,0 +1,53 @@
+.mainly{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-left: 210px;
+}
+h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+body{
+  background-color: rgb(37, 37, 37);
+}
+#one{
+  margin-top: -37px;
+  position: absolute;
+  margin-left:40px;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.showing {
+  visibility: showing;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition-property: opacity, visibility;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.overlay article {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 20px;
+  width: 50vw;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  overflow-y: scroll;
+}
