@@ -21,5 +21,33 @@
             document.querySelector('.showing').className = 'overlay hidden';
         }
     });
+        const myImages = [
+        'calicocat1.jpg', 
+        'calicocat2.jpg', 
+        ];
+
+        document.getElementById('next').addEventListener('click', nextPhoto);
+        document.getElementById('previous').addEventListener('click', previousPhoto);
+        
+        const slide = document.getElementById('myCalico');
+        
+        let currentImage = 0;
+
+        function nextPhoto() {
+            currentImage++; 
+            if (currentImage > myImages.length-1) {
+                currentImage = 0;
+            }
+            slide.src = `photos/${myImages[currentImage]}`;
+        }
+
+        function previousPhoto() {
+            currentImage--;
+            if (currentImage < 0) {
+                currentImage = myImages.length - 1;
+            }
+            slide.src = `photos/${myImages[currentImage]}`;
+        }
+
 
 })();

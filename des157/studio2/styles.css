@@ -5,18 +5,51 @@
   justify-content: center;
   margin-left: 210px;
 }
-h1{
+footer{
+  position: absolute;
+  bottom:50px;
+  left:50px;
+  font-family: Pangolin;
+}
+footer a{
+  text-decoration: none;
+  border: rgb(80, 80, 255) 2px dotted;
+  background-color: rgb(75, 10, 21);
+  border-radius: 5px;
+  padding: 3px;
   color: rgb(255, 255, 255);
+  margin-right: 10px;
+}
+footer a:hover {
+  background-color: rgb(245, 230, 233);
+  color: black;
+
+}
+img{
+  border-radius: 5px;
+}
+article h3{
+  color: white;
+  font-size: 40px;
+  font-family: Pangolin;
+  margin-left: 50px;
+  margin-bottom:-5px;
+}
+ul li{
+  color: white;
+  font-family: Pangolin;
+  width: 200px;
+}
+h1{
+  color: rgb(87, 14, 4);
   text-align: center;
+  font-family: marvin round;
+  margin-bottom: 30px;
 }
 body{
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(87, 126, 255);
 }
-#one{
-  margin-top: -37px;
-  position: absolute;
-  margin-left:40px;
-}
+
 .hidden {
   visibility: hidden;
   opacity: 0;
@@ -29,7 +62,7 @@ body{
 
 .overlay {
   position: absolute;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgb(255, 194, 194);
   top: 0;
   left: 0;
   width: 100vw;
@@ -41,13 +74,47 @@ body{
 
 .overlay article {
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   padding: 20px;
-  width: 50vw;
-  height: 80vh;
+  width: 80vw;
+  height: 100vh;
   position: absolute;
   top: 50%;
   left: 50%; 
   transform: translate(-50%, -50%); 
   overflow-y: scroll;
 }
+
+article img{
+  position: absolute;
+  top: 50%;
+  left: 60%; 
+  width: 90;
+  transform: translate(-50%, -50%); 
+}
+div img:hover{
+  width: 190px;
+}
+.corner{
+  position: absolute;
+  top: 40px;
+  right: 0px; 
+  transform: translate(-50%, -50%); 
+  color: rgb(253, 189, 189);
+  font-size: 38px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+}
+#exit{
+  position: absolute;
+  bottom: 50px;
+  left: 140px; 
+  transform: translate(-50%, -50%); 
+  font-family: Pangolin;
+  font-size: 20px;
+  border: 1px dotted black;
+  border-radius: 5px;
+  background-color: rgb(255, 189, 220)
+};
