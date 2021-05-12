@@ -107,7 +107,7 @@ div img:hover{
   border: none;
 
 }
-#exit{
+#exit1, #exit2, #exit3, #exit4, #exit5, #exit6{
   position: absolute;
   bottom: 50px;
   left: 140px; 
