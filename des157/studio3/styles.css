@@ -1,0 +1,50 @@
+body {
+  font-family: Arial;
+  color: #333;
+  padding: 50px;
+  line-height: 1.5em;
+  display: center;
+}
+h1{
+  font-family: marvin round;
+  color: rgb(255, 80, 109);
+  font-size: 40px;
+  margin-top: -10px;
+  text-align: center;
+  
+}
+body p{
+  background-color: rgb(255, 223, 227);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: justify;
+  width:  50%;
+}
+
+h2{
+  font-family: marvin round;
+}
+
+button { 
+  padding: 10px;
+  font-family: marvin round;
+  color: grey;
+  background-color: rgb(245, 255, 252);
+  border-radius: 5px;
+  
+}
+
+div {
+  padding: 20px;
+}
+
+#gamecontrol, #score {
+  background-color: aliceblue;
+}
+
+#game {
+  background-color:#eaeaea;
+}
+#actions {
+  background-color: silver;
+}

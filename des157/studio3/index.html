@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script> 
+  <title>Game On!-</title>
+</head>
+<body>
+  <h1>Game of Pig!</h1>
+  <p id="rules">
+    <ul>
+      <li>There are two players. The player whose turn it is rolls the dice.</li>
+      <li>The total of the roll is added to the current player's score, unless either die comes up as a "one".</li>
+      <li>If this happens, this player's turn is over, and it is the other player’s turn. </li>
+      <li>After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player.</li>
+      <li>The first player to get 30 points or higher wins.</li>
+      <li>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</li>
+    </ul>
+
+    <div id="gamecontrol">
+        <h2>Start a Game</h2>
+        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+    </div>
+
+    <div id="game"></div>
+    <div id="actions"></div>
+    <div id="score"></div>
+  <div id="container">
+    
+
+    <main>
+      <section id="pig1-container">
+            <div class="pig1" id="pig1">
+              <img src="images/pig1.png" id="pig1" alt="pig1" width=300>
+            </div>
+            <h2>Pig 1</h2>
+            <h2 id="pig1-score">Score:</h2>
+      </section>
+
+      <section id="pig2-container">
+            <div class="pig2" id="pig2">
+              <img src="images/pig2.png" id="pig2" alt="pig2" width=300>
+            </div>
+            <h2>Pig 2</h2>
+            <h2 id="pig2-score">Score:</h2>
+      </section>
+
+    </main>
+
+</body>
+</html>
