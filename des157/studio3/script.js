@@ -5,7 +5,10 @@
         let game = document.getElementById('game');
         let score = document.getElementById('score');
         let actionArea = document.getElementById('actions');
+        let pig1score = document.getElementById('pig1-score');
+        let pig2score = document.getElementById('pig2-score');
 
+       
         const rollsound= new Audio('media/rollingdice.m4a');
         const clicksound= new Audio('media/clicking.m4a');
         const winsound= new Audio('media/winning.m4a');
@@ -51,8 +54,8 @@
             gameData.roll1 = Math.floor(Math.random() * 6) + 1;
             gameData.roll2 = Math.floor(Math.random() * 6 ) + 1;
             game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
-            game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}">
-            <img src = "${gameData.dice[gameData.roll2-1]}">`;
+            game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}" width=100>
+            <img src = "${gameData.dice[gameData.roll2-1]}" width=100>`;
             gameData.rollSum = gameData.roll1 + gameData.roll2;
             rollsound.play();
             
@@ -64,6 +67,7 @@
             game.innerHTML += '<p> Snake eyes! </p>';
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
+            showCurrentScore();
             setTimeout(setUpTurn, 2000);
         }
          else if(gameData.roll1 === 1 || gameData.roll2 === 1){
@@ -83,11 +87,13 @@
                     setUpTurn();
                 });
                 checkWinningCondition();
+                showCurrentScore();
             }
         }
         function checkWinningCondition(){
             if(gameData.score[gameData.index] > gameData.gameEnd){
                 score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
+                
                 winsound.play();
 
                 actionArea.innerHTML = '';
@@ -97,25 +103,11 @@
                 showCurrentScore();
                 score1.innerHTML = `<p>${gameData.players[0]}</p> <p>Score: ${gameData.score[0]}</p>`;
                 score2.innerHTML = `<p>${gameData.players[1]}</p> <p>Score: ${gameData.score[1]}</p>`;
-                /* game.innerHTML += `<img src="${gameData.players[0]}">`; */
             }
         }
         function showCurrentScore(){
-            score.innerHTML = `<p>The score is currently <strong> Player 1 ${gameData.score[0]}</strong> and <strong>Player 2${gameData.score[1]}</strong></p>`;
-            /* score.innerHTML += `<img src="images/pig1.png">;
-            '<img src = "images/pig1.png">'; */
-            
-           /*  {<img src = "${gameData.dice[gameData.roll2-1]}">`;} */
-           if (gameData.score[0] >30){
-             score[0].textContent = '30';
-           }
-           else if (gameData.score[1] > 30) {
-            score[1].textContent = '30';
-          }
-          else {
-            score[0].textContent = `${gameData.score[0]}`;
-            score[1].textContent = `${gameData.score[1]}`;
-          }
+            pig1score.innerHTML = `<p>Score: ${gameData.score[0]}</p>`;
+            pig2score.innerHTML = `<p>Score: ${gameData.score[1]}</p>`;
         }
 })()
 

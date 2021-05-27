@@ -14,20 +14,18 @@
   <title>Game On!-</title>
 </head>
 <body>
-  <h1>Game of Pig!</h1>
+  <h1>🐖 🐖 Game of Pig! 🐖 🐖</h1>
   <div id="rules">
-    <ul>
-      <li>There are two players. The player whose turn it is rolls the dice.</li>
-      <li>The total of the roll is added to the current player's score, unless either die comes up as a "one".</li>
-      <li>If this happens, this player's turn is over, and it is the other player’s turn. </li>
-      <li>After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player.</li>
-      <li>The first player to get 30 points or higher wins.</li>
-      <li>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</li>
-    </ul>
+      <p>🐽There are two players. The player whose turn it is rolls the dice.</p>
+      <p>🐽The total of the roll is added to the current player's score, unless either die comes up as a "one".</p>
+      <p>🐽If this happens, this player's turn is over, and it is the other player’s turn. </p>
+      <p>🐽After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player.</p>
+      <p>🐽The first player to get 30 points or higher wins.</p>
+      <p>🐽Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
   </div>
 
     <div id="gamecontrol">
-        <h2>Start a Game</h2>
+      <h2>Start Game ⬇️</h2>
         <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
     </div>
 
@@ -36,30 +34,34 @@
     </div>
     <div id="actions">
     </div>
-    <div id="score">
-      
+    <div id="score"></div>
     </div>
   <div id="container">
     <main>
       <section id="pig1-container">
+        <div id="winner"></div>
             <div class="pig1" id="pig1">
               <img src="pig1.png" id="pig1" alt="pig1" width=200>
             </div>
-            <h2>Pig 1</h2>
+            <h2>Pig 1 🐷</h2>
             <h2 id="pig1-score">Score:</h2>
       </section>
 
       <section id="pig2-container">
+        <div id="winner2"></div>
             <div class="pig2" id="pig2">
               <img src="pig2.png" id="pig2" alt="pig2" width=200>
             </div>
-            <h2>Pig 2</h2>
+            <h2>Pig 2 🐷</h2>
             <h2 id="pig2-score">Score:</h2>
       </section>
 
     </main>
 </div>
-    
+<footer>
+    <p><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> </p> 
+    <p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+</footer>
 
 </body>
 </html>
