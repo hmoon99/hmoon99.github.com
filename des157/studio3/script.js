@@ -99,7 +99,7 @@
         
         function checkWinningCondition(){//if the player has score of 30 or higher it prints that they won
             if(gameData.score[gameData.index] > gameData.gameEnd){
-                score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
+                score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!!</h2>`;
                 
                 winsound.play();
 
