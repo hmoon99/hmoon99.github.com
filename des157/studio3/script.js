@@ -5,12 +5,16 @@
         let game = document.getElementById('game');
         let score = document.getElementById('score');
         let actionArea = document.getElementById('actions');
+
+        //scores for each pig in container
         let pig1score = document.getElementById('pig1-score');
         let pig2score = document.getElementById('pig2-score');
 
-       
+        //sound for when dice are rolled
         const rollsound= new Audio('media/rollingdice.m4a');
+        //sound for when the start game button is clicked
         const clicksound= new Audio('media/clicking.m4a');
+        //sound for when the game is over and someone wins
         const winsound= new Audio('media/winning.m4a');
 
 
@@ -27,6 +31,7 @@
 	        gameEnd: 29
         };
 
+        //click event for start game button which is also the wanna quit button
         startGame.addEventListener("click", function(){
             gameData.index = Math.round(Math.random());
             gameControl.innerHTML = '<h2>The Game Has Started</h2>';
@@ -39,6 +44,8 @@
             console.log("set up the turn!");
             setUpTurn();
         });
+
+        //
         function setUpTurn(){
             game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
             actionArea.innerHTML = '<button id="roll">Roll the Dices</button>';
@@ -61,21 +68,20 @@
             
             
             gameData.rollSum = gameData.roll1 + gameData.roll2;
-
+        //if roll snake eyes
         if (gameData.rollSum === 2) {
-
             game.innerHTML += '<p> Snake eyes! </p>';
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
             setTimeout(setUpTurn, 2000);
-        }
+        }//if roll one dice with one
          else if(gameData.roll1 === 1 || gameData.roll2 === 1){
                 gameData.index ? (gameData.index=0):(gameData.index = 1);
                 game.innerHTML += `<p>Sorry one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
                 setTimeout(setUpTurn, 2000);
                 console.log("one of the two dice was a 1");
-            }
+            }//if roll no one dice
             else {
                 gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
                 actionArea.innerHTML = '<button id="rollagain">Roll again</button> or <button id="pass">Pass</button>';
@@ -90,7 +96,8 @@
                 showCurrentScore();
             }
         }
-        function checkWinningCondition(){
+        
+        function checkWinningCondition(){//if the player has score of 30 or higher it prints that they won
             if(gameData.score[gameData.index] > gameData.gameEnd){
                 score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
                 
@@ -99,7 +106,7 @@
                 actionArea.innerHTML = '';
                 document.getElementById('quit').innerHTML = "Start a New Game?"
             }
-            else{
+            else{//if no player is over 30 yet, display their current score
                 showCurrentScore();
                 score1.innerHTML = `<p>${gameData.players[0]}</p> <p>Score: ${gameData.score[0]}</p>`;
                 score2.innerHTML = `<p>${gameData.players[1]}</p> <p>Score: ${gameData.score[1]}</p>`;
