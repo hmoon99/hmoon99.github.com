@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>Game of Pig!</h1>
-  <p id="rules">
+  <div id="rules">
     <ul>
       <li>There are two players. The player whose turn it is rolls the dice.</li>
       <li>The total of the roll is added to the current player's score, unless either die comes up as a "one".</li>
@@ -24,22 +24,26 @@
       <li>The first player to get 30 points or higher wins.</li>
       <li>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</li>
     </ul>
+  </div>
 
     <div id="gamecontrol">
         <h2>Start a Game</h2>
         <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
     </div>
 
-    <div id="game"></div>
-    <div id="actions"></div>
-    <div id="score"></div>
+    <div id="game">
+      
+    </div>
+    <div id="actions">
+    </div>
+    <div id="score">
+      
+    </div>
   <div id="container">
-    
-
     <main>
       <section id="pig1-container">
             <div class="pig1" id="pig1">
-              <img src="images/pig1.png" id="pig1" alt="pig1" width=300>
+              <img src="pig1.png" id="pig1" alt="pig1" width=200>
             </div>
             <h2>Pig 1</h2>
             <h2 id="pig1-score">Score:</h2>
@@ -47,13 +51,15 @@
 
       <section id="pig2-container">
             <div class="pig2" id="pig2">
-              <img src="images/pig2.png" id="pig2" alt="pig2" width=300>
+              <img src="pig2.png" id="pig2" alt="pig2" width=200>
             </div>
             <h2>Pig 2</h2>
             <h2 id="pig2-score">Score:</h2>
       </section>
 
     </main>
+</div>
+    
 
 </body>
 </html>

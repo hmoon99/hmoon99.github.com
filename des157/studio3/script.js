@@ -1,8 +1,10 @@
-        var startGame = document.getElementById('startgame');
-        var gameControl = document.getElementById('gamecontrol');
-        var game = document.getElementById('game');
-        var score = document.getElementById('score');
-        var actionArea = document.getElementById('actions');
+(function() {
+  "use strict"
+        let startGame = document.getElementById('startgame');
+        let gameControl = document.getElementById('gamecontrol');
+        let game = document.getElementById('game');
+        let score = document.getElementById('score');
+        let actionArea = document.getElementById('actions');
 
         const rollsound= new Audio('media/rollingdice.m4a');
         const clicksound= new Audio('media/clicking.m4a');
@@ -10,10 +12,10 @@
 
 
 
-        var gameData = {
+        let gameData = {
 	        dice: ['dice1.png', 'dice2.png', 'dice3.png', 
 		   'dice4.png', 'dice5.png', 'dice6.png'],
-	        players: ['player 1', 'player 2'],
+          players: ['Player 1', 'Player 2'],
 	        score: [0, 0],
 	        roll1: 0,
 	        roll2: 0,
@@ -55,14 +57,16 @@
             rollsound.play();
             
             
-            if (gameData.rollSum === 2){
-                game.innerHTML += `<p>Oh snap! Snake eyes! Switching to ${gameData.players[gameData.index]}</p>`;
-                gameData.score[gameData.index] = 0;
-                gamedata.index ? (gameData.index=0) : (gameData.index = 1);
-                setTimeout(setUpTurn, 2000);
-                showCurrentScore();
-            }
-            else if(gameData.roll1 === 1 || gameData.roll2 === 1){
+            gameData.rollSum = gameData.roll1 + gameData.roll2;
+
+        if (gameData.rollSum === 2) {
+
+            game.innerHTML += '<p> Snake eyes! </p>';
+            gameData.score[gameData.index] = 0;
+            gameData.index ? (gameData.index = 0) : (gameData.index = 1);
+            setTimeout(setUpTurn, 2000);
+        }
+         else if(gameData.roll1 === 1 || gameData.roll2 === 1){
                 gameData.index ? (gameData.index=0):(gameData.index = 1);
                 game.innerHTML += `<p>Sorry one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
                 setTimeout(setUpTurn, 2000);
@@ -84,21 +88,35 @@
         function checkWinningCondition(){
             if(gameData.score[gameData.index] > gameData.gameEnd){
                 score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
-                winsound.play(1000);
+                winsound.play();
 
                 actionArea.innerHTML = '';
                 document.getElementById('quit').innerHTML = "Start a New Game?"
             }
             else{
                 showCurrentScore();
-                score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} ${gameData.score[0]}</strong> and <strong>${gameData.players[1]} ${gameData.score[1]}</strong></p>`;
+                score1.innerHTML = `<p>${gameData.players[0]}</p> <p>Score: ${gameData.score[0]}</p>`;
+                score2.innerHTML = `<p>${gameData.players[1]}</p> <p>Score: ${gameData.score[1]}</p>`;
+                /* game.innerHTML += `<img src="${gameData.players[0]}">`; */
             }
         }
         function showCurrentScore(){
-            score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} ${gameData.score[0]}</strong> and <strong>${gameData.players[1]} ${gameData.score[1]}</strong></p>`;
+            score.innerHTML = `<p>The score is currently <strong> Player 1 ${gameData.score[0]}</strong> and <strong>Player 2${gameData.score[1]}</strong></p>`;
+            /* score.innerHTML += `<img src="images/pig1.png">;
+            '<img src = "images/pig1.png">'; */
+            
+           /*  {<img src = "${gameData.dice[gameData.roll2-1]}">`;} */
+           if (gameData.score[0] >30){
+             score[0].textContent = '30';
+           }
+           else if (gameData.score[1] > 30) {
+            score[1].textContent = '30';
+          }
+          else {
+            score[0].textContent = `${gameData.score[0]}`;
+            score[1].textContent = `${gameData.score[1]}`;
+          }
         }
-        
-        
-
+})()
 
     
