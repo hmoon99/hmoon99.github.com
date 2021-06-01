@@ -1,0 +1,251 @@
+section {
+  display: none;
+}
+
+/* Front Page */
+section:first-of-type{
+  display: grid;
+  border: dotted 5px black;
+}
+section:first-of-type h1{
+  font-size: 60px;
+  position: absolute;
+  top: 120px;
+  left:400px;
+  margin-bottom: 50px;
+  font-family: Marvin round;
+  font-weight: lighter;
+  color: rgb(31, 2, 23);
+  width: 600px;
+}
+p{
+  font-family: Pangolin;
+  font-size: 20px;
+  text-align: justify;
+  width: 450px;
+  border-radius: 5px;
+  border: 3px dotted rgb(255, 33, 189);
+  position: absolute;
+  top: 325px;
+  left: 480px;
+  padding: 10px;
+}
+#paws{
+  position: absolute;
+  top: 230px;
+  right: 280px;
+  image-orientation: unset;
+}
+/* first page button */
+#start{
+  position: absolute;
+  top: 550px;
+  right: 650px;
+  background-color: rgb(152, 199, 252);
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 20px;
+  width: 150px;
+  font-family: Pangolin;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  
+}
+#start:hover{
+  background-color: rgb(240, 202, 231);
+}
+
+/* each mystery cat box */
+#mainly{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  justify-content: center;
+  width: 800px;
+  margin-left: 310px;
+  margin-right: 100px;
+}
+.box img{
+  border-radius: 5px;
+  border: black solid 1px;
+
+}
+.box img:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+#hi{
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+footer{
+  position: absolute;
+  bottom:50px;
+  left:50px;
+  font-family: Pangolin;
+}
+footer a{
+  text-decoration: none;
+  border: rgb(0, 0, 0) 2px dotted;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 3px;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+}
+footer a:hover {
+  background-color: rgb(210, 252, 255);
+  color: black;
+
+}
+
+article h3{
+  color: white;
+  font-size: 40px;
+  font-family: Pangolin;
+  margin-left: 50px;
+  margin-bottom:-5px;
+}
+ul li{
+  color: white;
+  font-family: Pangolin;
+  width: 200px;
+}
+h1{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: marvin round;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size: 35px;
+}
+body{
+  background-image: linear-gradient(to right, rgb(224, 212, 252) , rgb(255, 212, 242), rgb(142, 204, 255),rgb(255, 255, 255));
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.showing {
+  visibility: showing;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition-property: opacity, visibility;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.overlay article {
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 80vw;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  overflow-y: scroll;
+}
+
+article img{
+  position: absolute;
+  top: 50%;
+  left: 60%; 
+  width: 90;
+  transform: translate(-50%, -50%); 
+}
+
+.corner{
+  position: absolute;
+  top: 40px;
+  right: 0px; 
+  transform: translate(-50%, -50%); 
+  color: rgb(253, 189, 189);
+  font-size: 38px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+}
+#exit1, #exit2, #exit3, #exit4, #exit5, #exit6{
+  position: absolute;
+  bottom: 50px;
+  left: 140px; 
+  transform: translate(-50%, -50%); 
+  font-family: Pangolin;
+  font-size: 20px;
+  border: 3px dotted black;
+  border-radius: 10px;
+  background-color: rgb(255, 189, 220)
+}
+#exit1:hover, #exit2:hover, #exit3:hover, #exit4:hover, #exit5:hover, #exit6:hover{
+  background-color: rgb(255, 100, 100);
+}
+#previous{
+  border: 3px dotted rgb(0, 247, 255);
+  border-radius: 10px;
+  background-color: rgb(208, 252, 255);
+  padding: 8px;
+  position: absolute;
+  top: 250px;
+  left: 80px;
+  font-family: Pangolin;
+}
+#next{
+  border: 3px dotted rgb(0, 247, 255);
+  border-radius: 10px;
+  background-color: rgb(208, 252, 255);
+  padding: 8px;
+  position: absolute;
+  top: 250px;
+  left: 170px;
+  font-family: Pangolin;
+}
+#previous:hover{
+  background-color: gray;
+  color: white;
+}
+#next:hover{
+  background-color: gray;
+  color: white;
+}
+#previous2{
+  border: 3px dotted rgb(0, 247, 255);
+  border-radius: 10px;
+  background-color: rgb(208, 252, 255);
+  padding: 8px;
+  position: absolute;
+  top: 250px;
+  left: 80px;
+  font-family: Pangolin;
+}
+#next2{
+  border: 3px dotted rgb(0, 247, 255);
+  border-radius: 10px;
+  background-color: rgb(208, 252, 255);
+  padding: 8px;
+  position: absolute;
+  top: 250px;
+  left: 170px;
+  font-family: Pangolin;
+}
+#previous2:hover{
+  background-color: gray;
+  color: white;
+}
+#next2:hover{
+  background-color: gray;
+  color: white;
+}

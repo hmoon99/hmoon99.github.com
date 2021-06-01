@@ -5,46 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js" defer></script>
   <title>Every Picture</title>
-  <link href="styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script> 
+<link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>MEET MY NEIGHBORHOOD FRIENDS</h1>
-<div class="mainly">
-<div class="box">
-    <img src="images/pinkymysterycat.jpg" class="open" id="one" alt="mysterycat" width=200>
+<main>
+  <!--First Page-->
+  <section>
+    <h1>INTRODUCING MY NEIGHBORHOOD FRIENDS 🐈</h1>
+    <p>Hello! Welcome to my page where I introduce all my buddies. Thanks to them, taking walks around the neighborhood are fun. I used to be quite scared of them but throughout the years, I have learned to appreciate their company.</p>
+    <img src="images/catpaws.png" id="paws" alt="paws" width=200>
+    <button id="start">Click Here!</button>
+  </section>
+
+  <!--Main Page-->
+<section>
+  <h1>🖤 MEET MY NEIGHBORHOOD FRIENDS 🖤 </h1>
+  <div id="mainly">
+  <img src="images/hi.png" id="hi" alt="hi" width=100>
+  <div class="box">
+    <img src="images/pinkymysterycat.jpg" class="open" id="one" alt="mysterycat" width=250>
   </div>
-<div class="box">
-    <img src="images/orangeymysterycat.jpg" class="open" id="two" alt="mysterycat" width=200>
-</div>
-<div class="box">
-  <img src="images/yellowymysterycat.jpg" class="open" id="three" alt="mysterycat" width=200>
-</div>
-<div class="box">
-  <img src="images/greenymysterycat.jpg" class="open" id="four" alt="mysterycat" width=200>
-</div>
-<div class="box">
-  <img src="images/blueymysterycat.jpg" class="open" id="five" alt="mysterycat" width=200>
-</div>
-<div class="box">
-  <img src="images/purpleymysterycat.jpg" class="open" id="six" alt="mysterycat" width=200>
-</div>
-</div>
+  <div class="box">
+    <img src="images/orangeymysterycat.jpg" class="open" id="two" alt="mysterycat" width=250>
+  </div>
+  <div class="box">
+    <img src="images/yellowymysterycat.jpg" class="open" id="three" alt="mysterycat" width=250>
+  </div>
+  <div class="box">
+    <img src="images/greenymysterycat.jpg" class="open" id="four" alt="mysterycat" width=250>
+  </div>
+  <div class="box">
+    <img src="images/blueymysterycat.jpg" class="open" id="five" alt="mysterycat" width=250>
+  </div>
+  <div class="box">
+    <img src="images/purpleymysterycat.jpg" class="open" id="six" alt="mysterycat" width=250>
+  </div>
+  </div>
+</section>
     
-      
-    <footer>
-      <a href="https://validator.w3.org/check?uri=https://hmoon99.github.io/des157/studio2/index.html">Valid HTML</a>
-     <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
-    </footer>
-
-
-<section id="ol-one" class="overlay hidden">
+<!--overlays-->
+<div id="ol-one" class="overlay hidden">
     <article>
         <img src="photos/eyelinercat.jpg" alt="cat" width=700>
         <h3>PANDA</h3>
@@ -57,11 +64,11 @@
         <button class="close" id="exit1">close</button>
         <button class="corner close">&otimes;</button>
     </article>  
-</section>
+  </div>
 
-<section id="ol-two" class="overlay hidden">
+<div id="ol-two" class="overlay hidden">
   <article>
-      <img src="photos/chubscat.JPG" alt="cat" width=800>
+      <img src="photos/chubscat1.jpg" alt="cat" id="myChubs" width=800>
       <h3>CHUBS</h3>
       <ul>
         <li>Favorite activity is sleeping</li>
@@ -70,10 +77,13 @@
       </ul>
       <button class="close" id="exit2">close</button>
       <button class="corner close">&otimes;</button> 
-  </article>
-</section>
 
-<section id="ol-three" class="overlay hidden">
+      <button id="previous2">previous</button> 
+      <button id="next2">next</button> 
+  </article>
+</div>
+
+<div id="ol-three" class="overlay hidden">
   <article>
       <img src="photos/calicocat1.jpg" alt="cat" id="myCalico" width=700>
       <h3>Princess</h3>
@@ -85,12 +95,13 @@
       </ul>
       <button class="close" id="exit3">close</button>
       <button class="corner close">&otimes;</button> 
+  
       <button id="previous">previous</button> 
-      <button id="next">next</button>              
+      <button id="next">next</button>            
   </article>
-</section>
+</div>
 
-<section id="ol-four" class="overlay hidden">
+<div id="ol-four" class="overlay hidden">
   <article>
       <img src="photos/grayfluffycat.JPG" alt="cat" width=700>
       <h3>Thunder</h3>
@@ -102,9 +113,9 @@
       <button class="close" id="exit4">close</button>
       <button class="corner close">&otimes;</button>
   </article>
-</section>
+</div>
 
-<section id="ol-five" class="overlay hidden">
+<div id="ol-five" class="overlay hidden">
   <article>
       <img src="photos/orangecat.jpg" alt="cat" width=700>
       <h3>Honey</h3>
@@ -117,9 +128,9 @@
       <button class="close" id="exit5">close</button>
       <button class="corner close">&otimes;</button>
   </article>
-</section>
+</div>
 
-<section id="ol-six" class="overlay hidden">
+<div id="ol-six" class="overlay hidden">
   <article>
       <img src="photos/cat.jpeg" alt="cat" width=700>
       <h3>Snowflake</h3>
@@ -131,7 +142,14 @@
       <button class="close" id="exit6">close</button>
       <button class="corner close">&otimes;</button>
   </article>
-</section>
+</div>
+</main>
+
+<footer>
+  <a href="https://validator.w3.org/check?uri=https://hmoon99.github.io/des157/studio2/index.html">Valid HTML</a>
+ <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+</footer>
+
 
 </body>
 </html>

@@ -2,6 +2,20 @@
   'use strict';
   const openLinks = document.querySelectorAll('.open');
   const meow= new Audio('media/meow.m4a');
+
+  /* var pageTop;
+  var bodyTag = document.querySelector('body');
+
+window.addEventListener('scroll', function(){
+    pageTop = window.pageYOffset;
+        switch(true){
+            case pageTop < 500: bodyTag.className="one"; break;
+            case pageTop < 1000: bodyTag.className="two"; break;
+            case pageTop < 1500: bodyTag.className="three"; break;
+            case pageTop < 2000: bodyTag.className="four"; break;
+            default: bodyTag.className="five";
+        }
+}); */
   for(let i=0;i<openLinks.length; i++){
       openLinks[i].addEventListener('click', function(event){
           event.preventDefault();
