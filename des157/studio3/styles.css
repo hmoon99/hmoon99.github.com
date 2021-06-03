@@ -4,15 +4,8 @@ body {
   padding: 50px;
   line-height: 1.5em;
   display: center;
-  /* background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(251, 227, 255)); */
-  background-color: blue;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(251, 227, 255));
 }
-/* body div{ height: 3000px; }
-    .one { background-color: beige; transition: all 1s; }
-    .two { background-color: blueviolet; transition: all 1s; }
-    .three { background-color: coral; transition: all 1s; }
-    .four { background-color: cornflowerblue; transition: all 1s; }
-    .five { background-color: red; transition: all 3s; } */
 p{
   font-family: Geneva;
   margin: 0px;
