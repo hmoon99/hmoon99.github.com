@@ -3,7 +3,6 @@ body {
   color: #333;
   padding: 50px;
   line-height: 1.5em;
-  display: center;
   background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(251, 227, 255));
 }
 p{
@@ -65,7 +64,6 @@ div {
 }
 div{
   width: 50%;
-  display: center;
 }
 
 #pig1-container{

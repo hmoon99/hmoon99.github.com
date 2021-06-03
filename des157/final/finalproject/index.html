@@ -11,6 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap" rel="stylesheet">
 <link href="styles.css" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
@@ -18,37 +20,61 @@
 <main>
   <!--First Page-->
   <section>
-    <h1>INTRODUCING MY NEIGHBORHOOD FRIENDS 🐈</h1>
+    <h1>INTRODUCING MY NEIGHBORHOOD FRIENDS!</h1>
+    <img src="images/cloud.png" id="cloud" alt="cloud">
     <p>Hello! Welcome to my page where I introduce all my buddies. Thanks to them, taking walks around the neighborhood are fun. I used to be quite scared of them but throughout the years, I have learned to appreciate their company.</p>
+    <img src="images/cloud2.png" id="cloud2" alt="cloud2">
     <img src="images/catpaws.png" id="paws" alt="paws" width=200>
-    <button id="start">Click Here!</button>
+    <button id="start">LET'S GO MEET THEM!</button>
   </section>
 
   <!--Main Page-->
 <section>
   <h1>🖤 MEET MY NEIGHBORHOOD FRIENDS 🖤 </h1>
-  <div id="mainly">
-  <img src="images/hi.png" id="hi" alt="hi" width=100>
+  <div id="main">
   <div class="box">
     <img src="images/pinkymysterycat.jpg" class="open" id="one" alt="mysterycat" width=250>
-  </div>
+    <div class ="hi">
+      <img src="images/hi.png" id="hi" width=150 alt="hi">
+    </div>
+</div>
   <div class="box">
     <img src="images/orangeymysterycat.jpg" class="open" id="two" alt="mysterycat" width=250>
+    <div class ="blackhearts">
+      <img src="images/blackhearts.png" id="blackhearts" width=100 alt="blackhearts">
+    </div>
   </div>
   <div class="box">
     <img src="images/yellowymysterycat.jpg" class="open" id="three" alt="mysterycat" width=250>
+    <div class ="hello">
+      <img src="images/hello.png" id="hello" width=150 alt="hello">
+    </div>
   </div>
   <div class="box">
     <img src="images/greenymysterycat.jpg" class="open" id="four" alt="mysterycat" width=250>
+    <div class="meow">
+      <img src="images/meow.png" id="meow" width=150 alt="meow">
+      </div>
   </div>
   <div class="box">
     <img src="images/blueymysterycat.jpg" class="open" id="five" alt="mysterycat" width=250>
+    <div class ="hearts">
+      <img src="images/hearts.png" id="hearts" width=100 alt="hearts">
+    </div>
   </div>
   <div class="box">
     <img src="images/purpleymysterycat.jpg" class="open" id="six" alt="mysterycat" width=250>
-  </div>
+    <div class="love">
+    <img src="images/love.png" id="love" width=150 alt="love">
+    </div>
   </div>
 </section>
+
+<footer>
+  <a href="https://validator.w3.org/check?uri=https://hmoon99.github.io/des157/final/finalproject/index.html">Valid HTML</a>
+  <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+</footer>
+
     
 <!--overlays-->
 <div id="ol-one" class="overlay hidden">
@@ -56,12 +82,12 @@
         <img src="photos/eyelinercat.jpg" alt="cat" width=700>
         <h3>PANDA</h3>
         <ul>
-        <li>Eyeliner eyes</li>
+        <li>Eyeliner</li>
         <li>Emerald green eyes</li>
         <li>Friendly</li>
         <li>Likes to walk on the sidewalks</li>
       </ul>
-        <button class="close" id="exit1">close</button>
+        <button class="close" id="exit1">CLOSE</button>
         <button class="corner close">&otimes;</button>
     </article>  
   </div>
@@ -75,11 +101,12 @@
         <li>Usually hangs out near the swimming pool</li>
         <li>A bit shy with strangers</li>
       </ul>
-      <button class="close" id="exit2">close</button>
+      <button class="close" id="exit2">CLOSE</button>
       <button class="corner close">&otimes;</button> 
 
       <button id="previous2">previous</button> 
       <button id="next2">next</button> 
+      <p id="info2">Click to see 4 photos!</p>
   </article>
 </div>
 
@@ -93,11 +120,12 @@
         <li>Elegant yellow-green eyes</li>
         <li>Enjoys playing in the grass</li>
       </ul>
-      <button class="close" id="exit3">close</button>
+      <button class="close" id="exit3">CLOSE</button>
       <button class="corner close">&otimes;</button> 
   
       <button id="previous">previous</button> 
-      <button id="next">next</button>            
+      <button id="next">next</button> 
+      <p id="info">Click to see 2 photos!</p>           
   </article>
 </div>
 
@@ -110,14 +138,14 @@
         <li>Fierce yellow eyes</li>
         <li>Likes to hang around the office area</li>
       </ul>
-      <button class="close" id="exit4">close</button>
+      <button class="close" id="exit4">CLOSE</button>
       <button class="corner close">&otimes;</button>
   </article>
 </div>
 
 <div id="ol-five" class="overlay hidden">
   <article>
-      <img src="photos/orangecat.jpg" alt="cat" width=700>
+      <img src="photos/orangecat.jpg" alt="cat" height=700>
       <h3>Honey</h3>
       <ul>
         <li>The one and only orange cat that lives here</li>
@@ -125,7 +153,7 @@
         <li>likes to roam in the bushes</li>
         <li>Adventurous and fun</li>
       </ul>
-      <button class="close" id="exit5">close</button>
+      <button class="close" id="exit5">CLOSE</button>
       <button class="corner close">&otimes;</button>
   </article>
 </div>
@@ -139,17 +167,11 @@
         <li>Calm and quiet</li>
         <li>Likes the chilly morning weather</li>
       </ul>
-      <button class="close" id="exit6">close</button>
+      <button class="close" id="exit6">CLOSE</button>
       <button class="corner close">&otimes;</button>
   </article>
 </div>
 </main>
-
-<footer>
-  <a href="https://validator.w3.org/check?uri=https://hmoon99.github.io/des157/studio2/index.html">Valid HTML</a>
- <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
-</footer>
-
 
 </body>
 </html>
